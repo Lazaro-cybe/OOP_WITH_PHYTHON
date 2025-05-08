@@ -1,6 +1,6 @@
 # hello_class.py
 
-class HelloWorld:
+class HelloWorld: 
     def say_hello(self):
         print("Hello, World! This is my first OOP program.")
 
