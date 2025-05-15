@@ -16,3 +16,22 @@ class Temperature:
         else:
             self.__celsius = value
 
+    # Convert to Fahrenheit
+    def to_fahrenheit(self):
+        return (self.__celsius * 9/5) + 32
+
+# Create temperature object
+temp = Temperature(25)
+
+# Get temperature
+print("Current temperature in Celsius:", temp.get_celsius())
+print("In Fahrenheit:", temp.to_fahrenheit())
+
+# Try setting an invalid temperature
+temp.set_celsius(-300)
+
+# Set a valid temperature
+temp.set_celsius(37)
+print("Updated temperature in Celsius:", temp.get_celsius())
+print("Updated in Fahrenheit:", temp.to_fahrenheit())
+
