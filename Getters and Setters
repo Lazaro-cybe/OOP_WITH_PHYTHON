@@ -1,1 +1,18 @@
+# temperature_class.py
+
+class Temperature:
+    def __init__(self, celsius):
+        # private attribute
+        self.__celsius = celsius
+
+    # Getter method
+    def get_celsius(self):
+        return self.__celsius
+
+    # Setter method with validation
+    def set_celsius(self, value):
+        if value < -273.15:
+            print("Error: Temperature cannot be below absolute zero (-273.15°C).")
+        else:
+            self.__celsius = value
 
