@@ -20,3 +20,15 @@ class Calculator:
         else:
             return "Error: Division by zero"
 
+# Example usage
+calc1 = Calculator(10, 5)
+
+print("Addition:", calc1.add())
+print("Subtraction:", calc1.subtract())
+print("Multiplication:", calc1.multiply())
+print("Division:", calc1.divide())
+
+# Another example with division by zero
+calc2 = Calculator(10, 0)
+print("Division with 0:", calc2.divide())
+
